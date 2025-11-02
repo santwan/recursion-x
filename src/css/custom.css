@@ -3,6 +3,54 @@
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
+/* Body text */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+/* Code */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --ifm-font-family-base: 'Source Sans Pro', system-ui, sans-serif;
+  --ifm-font-family-monospace: 'Roboto Mono', monospace;
+}
+
+html, body {
+  font-family: var(--ifm-font-family-base);
+}
+
+html, body {
+  word-spacing: 0.2em;
+  line-height: 1.6; /* keeps paragraphs airy */
+  font-weight: 500;
+}
+
+.markdown ul li::marker {
+  color: #ff7b00; /* level 1 */
+}
+
+.markdown ul ul li::marker {
+  color: #007bff; /* level 2 */
+}
+
+.markdown ul ul ul li::marker {
+  color: #16a34a; /* level 3 */
+}
+
+.markdown p strong {
+  color: #00aeff; /* choose your color */
+  font-weight: 600;
+}
+
+.markdown ul li strong {
+  color: #ff7b00; /* choose your color */
+  font-weight: 600;
+}
+
+.markdown p code,
+.markdown li code {
+  color: #02db5c;
+  font-weight: 500;
+}
 
 /* You can override the default Infima variables here. */
 :root {
